@@ -150,7 +150,7 @@
         <div class="logo-name">Starwine</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            To be an interesting soul.
             
         </div>
     </div>
@@ -225,6 +225,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -453,6 +466,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'Ov23liFBjSqQMDIF5MKu',
+        clientSecret: '429b158860300fd1c0065aede75e5db6dba63110',
+        repo: 'frecoder007.github.io',
+        owner: 'frecoder007',
+        admin: "frecoder007",
+        id: '2024-07-07T13-01-29',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
@@ -473,18 +513,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/07/07/ben-ke-zong-jie/">
+                <a href="/2024/07/07/duo-duo-qing-chun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="本科总结">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="朵朵青春">
                         
-                        <span class="card-title">本科总结</span>
+                        <span class="card-title">朵朵青春</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -494,9 +533,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -505,12 +544,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%96%87%E5%AD%97/">
-                        <span class="chip bg-color">文字</span>
+                    <a href="/tags/%E9%9D%92%E6%98%A5/">
+                        <span class="chip bg-color">青春</span>
                     </a>
                     
                 </div>
