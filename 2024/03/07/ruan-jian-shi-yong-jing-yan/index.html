@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jupyternotebook的一种安装教程, Starwineのへや">
-    <meta name="description" content="Jupyter Notebook介绍、安装及使用教程
-参考资料：某乎1、某乎2
-本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸
+    <meta name="keywords" content="软件使用经验, Starwineのへや">
+    <meta name="description" content="
+本文为自己使用工科软件时可能会随手记录的一些方法，记录些七零八落的小知识
 
-Anaconda安装首先从这个页面上安装anaconda，这里提供的是miniconda版本">
+Origin应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Them">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +20,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>jupyternotebook的一种安装教程 | Starwineのへや</title>
+    <title>软件使用经验 | Starwineのへや</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -266,12 +265,12 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">jupyternotebook的一种安装教程</h1>
+                    <h1 class="description center-align post-title">软件使用经验</h1>
                 </div>
             </div>
         </div>
@@ -311,21 +310,21 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-11-03
+                    2024-03-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-07
+                    2024-07-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    272
+                    373
                 </div>
                 
 
@@ -347,25 +346,28 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Jupyter-Notebook介绍、安装及使用教程"><a href="#Jupyter-Notebook介绍、安装及使用教程" class="headerlink" title="Jupyter Notebook介绍、安装及使用教程"></a>Jupyter Notebook介绍、安装及使用教程</h2><blockquote>
-<p>参考资料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33105153">某乎1</a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/242524977">某乎2</a></p>
-<p>本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸</p>
+                <blockquote>
+<p>本文为自己使用工科软件时可能会随手记录的一些方法，记录些七零八落的小知识</p>
 </blockquote>
-<h3 id="Anaconda安装"><a href="#Anaconda安装" class="headerlink" title="Anaconda安装"></a>Anaconda安装</h3><p>首先从<a target="_blank" rel="noopener" href="https://pymatgen.org/installation.html#conda-based-install">这个页面</a>上安装anaconda，这里提供的是miniconda版本。</p>
-<p>其次，常规来说，安装了Anaconda发行版时已经自动为你安装了Jupyter Notebook的，但如果没有自动安装，那么就在终端（Linux或macOS的“终端”，Windows的“Anaconda Prompt”，以下均简称“终端”）中输入以下命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install jupyter notebook</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装numpy-pil库"><a href="#安装numpy-pil库" class="headerlink" title="安装numpy, pil库"></a>安装numpy, pil库</h3><p>在网页版jupyter notebook点击new，选择Terminal，输入<code>pip install numpy</code></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45326961">安装PIL库</a></p>
-<blockquote>
-<p>PIL，全称 Python Imaging Library，是 Python 平台一个功能非常强大而且简单易用的图像处理库。但是，由于 PIL 仅支持到Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容 Python 3 的版本，名字叫 Pillow ，我们可以通过安装 Pillow 来使用 PIL。</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install Pillow </span><br><span class="line"><span class="comment"># 更新库语法</span></span><br><span class="line">python3 -m pip install --upgrade pip</span><br><span class="line">python3 -m pip install --upgrade Pillow</span><br></pre></td></tr></table></figure>
+<h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Theme Organizer（快捷键F7），找到之前存好的主题，点击应用即可（Apply Now）。</p>
+<h2 id="Zview导入弹窗问题"><a href="#Zview导入弹窗问题" class="headerlink" title="Zview导入弹窗问题"></a>Zview导入弹窗问题</h2><p>Q：我安装了另外的ZView，显示this program is operating in a demonstration mode. For full authorization，please contact scribner associates or your distributor，这是怎么回事啊</p>
+<p>A：直接导入TXT出现了这个情况，，删掉TXT里面非数字部分后目前就解决了</p>
+<p>SA：未解决：删掉最后那两列degree和别的值好像就不缺了，只保留frequency Z’ 和Z’’，然后又用数字形式保存到了txt里</p>
+<h2 id="Adobe快捷键"><a href="#Adobe快捷键" class="headerlink" title="Adobe快捷键"></a>Adobe快捷键</h2><h3 id="Photoshop"><a href="#Photoshop" class="headerlink" title="Photoshop"></a>Photoshop</h3><p>Ctrl+T：修改图层大小<br>Ctrl+鼠标左键：选中图层<br>Ctrl+D：取消选区</p>
+<h3 id="Premier"><a href="#Premier" class="headerlink" title="Premier"></a>Premier</h3><p>Ctrl + alt + 鼠标左键：左右替换素材<br>alt + 出入点 + 鼠标左键：从素材箱直接替换到视频轨道</p>
+<h3 id="影视飓风使用的字幕版式"><a href="#影视飓风使用的字幕版式" class="headerlink" title="@影视飓风使用的字幕版式"></a>@影视飓风使用的字幕版式</h3><h4 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h4><p>字体:思源黑体，字形:粗体</p>
+<p>颜色:白色，大小:50，字距:0</p>
+<h4 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h4><p>位置:X:1920，Y:150</p>
+<h4 id="投影"><a href="#投影" class="headerlink" title="投影"></a>投影</h4><p>色彩:黑色<br>偏移:X:4，Y:-4<br>模糊:4<br>不透明度:75</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>适用于 4096*2048分辨率<br>参考数值，非硬性规定，可自行调整</p>
 
                 
             </div>
@@ -392,7 +394,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/2023/11/03/jupyternotebook-de-yi-chong-an-zhuang-jiao-cheng/">http://frecoder007.github.io/2023/11/03/jupyternotebook-de-yi-chong-an-zhuang-jiao-cheng/</a>
+                    <a href="http://frecoder007.github.io/2024/03/07/ruan-jian-shi-yong-jing-yan/">http://frecoder007.github.io/2024/03/07/ruan-jian-shi-yong-jing-yan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -509,7 +511,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
         repo: 'frecoder007.github.io',
         owner: 'frecoder007',
         admin: "frecoder007",
-        id: '2023-11-03T11-15-38',
+        id: '2024-03-07T20-32-48',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -541,13 +543,13 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/07/yi-xie-ruan-jian-jing-yan-bi-ji/">
+                <a href="/2024/07/07/ben-ke-bi-she-zhi-xie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="一些软件经验笔记">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="毕业论文致谢">
                         
-                        <span class="card-title">一些软件经验笔记</span>
+                        <span class="card-title">毕业论文致谢</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -558,7 +560,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-07
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
                         </span>
                         <span class="publish-author">
                             
@@ -571,8 +573,8 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
-                        <span class="chip bg-color">技术杂谈</span>
+                    <a href="/tags/%E6%96%87%E5%AD%97/">
+                        <span class="chip bg-color">文字</span>
                     </a>
                     
                 </div>
@@ -586,13 +588,13 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/09/08/vmware-xu-ni-ji-pei-zhi-cai-keng/">
+                <a href="/2023/09/08/ruan-jian-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="VMware虚拟机配置踩坑">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="软件配置">
                         
-                        <span class="card-title">VMware虚拟机配置踩坑</span>
+                        <span class="card-title">软件配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -672,6 +674,9 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.js"></script>
 
 
 <!-- 代码语言 -->

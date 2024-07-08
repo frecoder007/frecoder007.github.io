@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="VMware虚拟机配置踩坑, Starwineのへや">
-    <meta name="description" content="今天在折腾虚拟机的时候尝试使用桥接模式将VMware Ubuntu和宿主机作为两台设备相互通信，但是在校园网环境下执行的时候，按照教程设置好了IP地址、网关、子网掩码后，发现可以ping通主机但无法ping通百度。
-查看了多个博客后，记录一">
+    <meta name="keywords" content="软件配置, Starwineのへや">
+    <meta name="description" content="Jupyter Notebook安装教程
+2023-11-03参考资料：某乎1、某乎2
+本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸
+
+Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>VMware虚拟机配置踩坑 | Starwineのへや</title>
+    <title>软件配置 | Starwineのへや</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -263,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">VMware虚拟机配置踩坑</h1>
+                    <h1 class="description center-align post-title">软件配置</h1>
                 </div>
             </div>
         </div>
@@ -315,21 +318,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-07
+                    2024-07-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    481
+                    662
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -344,16 +347,26 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天在折腾虚拟机的时候尝试使用桥接模式将VMware Ubuntu和宿主机作为两台设备相互通信，但是在校园网环境下执行的时候，按照教程设置好了IP地址、网关、子网掩码后，发现可以ping通主机但无法ping通百度。</p>
-<p>查看了多个博客后，记录一个比较符合我情况的经验帖：</p>
+                <h2 id="Jupyter-Notebook安装教程"><a href="#Jupyter-Notebook安装教程" class="headerlink" title="Jupyter Notebook安装教程"></a>Jupyter Notebook安装教程</h2><blockquote>
+<p><code>2023-11-03</code>参考资料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33105153">某乎1</a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/242524977">某乎2</a></p>
+<p>本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸</p>
+</blockquote>
+<h3 id="Anaconda安装"><a href="#Anaconda安装" class="headerlink" title="Anaconda安装"></a>Anaconda安装</h3><p>首先从<a target="_blank" rel="noopener" href="https://pymatgen.org/installation.html#conda-based-install">这个页面</a>上安装anaconda，这里提供的是miniconda版本。</p>
+<p>其次，常规来说，安装了Anaconda发行版时已经自动为你安装了Jupyter Notebook的，但如果没有自动安装，那么就在终端（Linux或macOS的“终端”，Windows的“Anaconda Prompt”，以下均简称“终端”）中输入以下命令安装：<code>conda install jupyter notebook</code></p>
+<h3 id="安装numpy-pil库"><a href="#安装numpy-pil库" class="headerlink" title="安装numpy, pil库"></a>安装numpy, <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45326961">pil库</a></h3><p>在网页版jupyter notebook点击new，选择Terminal，输入<code>pip install numpy</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install Pillow </span><br><span class="line"><span class="comment"># python更新库函数语法</span></span><br><span class="line">python3 -m pip install --upgrade pip</span><br><span class="line">python3 -m pip install --upgrade Pillow</span><br></pre></td></tr></table></figure>
+
+<h2 id="VMware虚拟机配置踩坑"><a href="#VMware虚拟机配置踩坑" class="headerlink" title="VMware虚拟机配置踩坑"></a>VMware虚拟机配置踩坑</h2><p><code>2023-09-08</code>今天在折腾虚拟机的时候尝试使用桥接模式将VMware Ubuntu和宿主机作为两台设备相互通信，但是在校园网环境下执行的时候，按照教程设置好了IP地址、网关、子网掩码后，发现可以ping通主机但无法ping通百度。查看了多个博客后，记录一个比较符合我情况的<a target="_blank" rel="noopener" href="https://blog.csdn.net/zzf1510711060/article/details/80682480">经验帖</a>：</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zzf1510711060/article/details/80682480">https://blog.csdn.net/zzf1510711060/article/details/80682480</a></p>
-<p>有关校园网的问题</p>
+<p><strong>有关校园网的问题</strong></p>
 <p>我在学校宿主机的ip是10.4.18.20而网关是10.4.16.1子网掩码是255.255.252.0</p>
 <p>我把虚拟机的ip设置成10.4.18.n，会出现可以ping的通8.8.8.8，ping外网的时候网址的ip也可以解析出来，但就是不出现包的</p>
 <p>我的解决方式是把10.4.18.n改成了10.4.16.n才能ping通</p>
@@ -361,9 +374,8 @@
 <p>我猜是虚拟机发出的包少了什么配置数据，所以被校园网的防火墙给劫了，导致返回不了数据，因为我用虚拟机ping宿主机，当宿主机的防火墙没有关的时候也是这样，一直没有数据返回。</p>
 <p>于是我就让宿主机脸上wifi结果一切畅通，丝滑流畅。。。校园网真的是坑。。。</p>
 </blockquote>
-<p>同样的，我改为个人热点连接后也成功ping了外网。证明校园网是会封锁某些ip数据的。至于更换ip没来得及尝试。</p>
+<p>同样的，我改为个人热点连接后也成功ping了外网。证明校园网是会封锁某些ip数据的。至于更换ip没来得及尝试。顺带一提traceroute可以检测网络问题，奈何快断电了我也没来得及尝试。</p>
 <p>同时有时候虚拟机和宿主机ping不通，检查自己的网络是公有网还是专用网络，此时把对应的防火墙关闭即可。</p>
-<p>顺带一提traceroute可以检测网络问题，奈何快断电了我也没来得及尝试。</p>
 
                 
             </div>
@@ -390,7 +402,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/2023/09/08/vmware-xu-ni-ji-pei-zhi-cai-keng/">http://frecoder007.github.io/2023/09/08/vmware-xu-ni-ji-pei-zhi-cai-keng/</a>
+                    <a href="http://frecoder007.github.io/2023/09/08/ruan-jian-pei-zhi/">http://frecoder007.github.io/2023/09/08/ruan-jian-pei-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -539,13 +551,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/11/03/jupyternotebook-de-yi-chong-an-zhuang-jiao-cheng/">
+                <a href="/2024/03/07/ruan-jian-shi-yong-jing-yan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jupyternotebook的一种安装教程">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="软件使用经验">
                         
-                        <span class="card-title">jupyternotebook的一种安装教程</span>
+                        <span class="card-title">软件使用经验</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -556,7 +568,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-07
                         </span>
                         <span class="publish-author">
                             
@@ -584,13 +596,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2023/09/08/vmware-xu-ni-ji-pei-zhi-cai-keng/">
+                <a href="/2023/09/08/ruan-jian-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="VMware虚拟机配置踩坑">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="软件配置">
                         
-                        <span class="card-title">VMware虚拟机配置踩坑</span>
+                        <span class="card-title">软件配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -671,6 +683,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.js"></script>
 
 
 <!-- 代码语言 -->

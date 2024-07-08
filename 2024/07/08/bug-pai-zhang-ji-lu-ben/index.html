@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="一些软件经验笔记, Starwineのへや">
+    <meta name="keywords" content="bug排障记录本, Starwineのへや">
     <meta name="description" content="
-本文为自己使用工科软件时可能会随手记录的一些方法。
+本文记录一些建站排障经验，非科班出身，仅作记录用
 
-Origin应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Theme Organizer">
+Git基本用法git测试联通性ssh -T git@github.com
+分支操作git branch列出本地所有分支，参数-r列出远程分支，-a：list both remote-tr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>一些软件经验笔记 | Starwineのへや</title>
+    <title>bug排障记录本 | Starwineのへや</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -265,12 +266,12 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">一些软件经验笔记</h1>
+                    <h1 class="description center-align post-title">bug排障记录本</h1>
                 </div>
             </div>
         </div>
@@ -310,28 +311,28 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-03-07
+                    2024-07-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-07
+                    2024-07-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    218
+                    562
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -346,18 +347,43 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>本文为自己使用工科软件时可能会随手记录的一些方法。</p>
+<p>本文记录一些建站排障经验，非科班出身，仅作记录用</p>
 </blockquote>
-<h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Theme Organizer（快捷键F7），找到之前存好的主题，点击应用即可（Apply Now）。</p>
-<h2 id="Zview导入弹窗问题"><a href="#Zview导入弹窗问题" class="headerlink" title="Zview导入弹窗问题"></a>Zview导入弹窗问题</h2><p>Q：我安装了另外的ZView，显示this program is operating in a demonstration mode. For full authorization，please contact scribner associates or your distributor，这是怎么回事啊</p>
-<p>A：直接导入TXT出现了这个情况，，删掉TXT里面非数字部分后目前就解决了</p>
-<p>SA：未解决：删掉最后那两列degree和别的值好像就不缺了，只保留frequency Z’ 和Z’’，然后又用数字形式保存到了txt里</p>
+<h2 id="Git基本用法"><a href="#Git基本用法" class="headerlink" title="Git基本用法"></a>Git基本用法</h2><h3 id="git测试联通性"><a href="#git测试联通性" class="headerlink" title="git测试联通性"></a>git测试联通性</h3><p><code>ssh -T git@github.com</code></p>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><p><code>git branch</code>列出本地所有分支，参数-r列出远程分支，-a：list both remote-tracking and local branches</p>
+<h3 id="本地初始化、远程连接库"><a href="#本地初始化、远程连接库" class="headerlink" title="本地初始化、远程连接库"></a>本地初始化、远程连接库</h3><p>先使用git链接到远程仓库，用法为<code>git remote add &lt;remoteRepoAvatar&gt; &lt;url:ssh&gt; </code>，此处<code>remoteRepoAvatar</code>指的是任一字符串，用于表示这个远程仓库（可以与云端仓库名字不同）。</p>
+<p>之后可以使用<code>git remote -v</code>检查项目中已有的远程仓库列表（该命令会显示远程仓库的名称和URL，如不加-v，则显示所有的AvatarName）</p>
+<h3 id="拉取和推送代码"><a href="#拉取和推送代码" class="headerlink" title="拉取和推送代码"></a>拉取和推送代码</h3><p>一般的，本地更新完代码后，需要执行<code>git add .``git commit -m &quot;updateLogs&quot;</code>和<code>git push</code></p>
+<p>要从新的远程仓库拉取最新的代码，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull &lt;remoteRepoAvatar&gt; &lt;分支名称&gt;</span><br></pre></td></tr></table></figure>
+
+<p>将 <code>&lt;分支名称&gt;</code> 替换为你要拉取的分支名称，例如 <code>master</code>。</p>
+<blockquote>
+<p>拉取失败，见<a target="_blank" rel="noopener" href="https://geek-docs.com/git/git-questions/30_git_fail_to_use_git_pull_couldnt_find_remote_ref_xxx.html">此解决办法</a></p>
+</blockquote>
+<p>推送代码：</p>
+<p><code>git push</code>命令用于从将本地的分支版本上传到远程并合并。</p>
+<p>命令格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果本地分支名与远程分支名相同，则可以省略冒号，远程主机名即为自定义的<code>remoteRepoAvatar</code></p>
+<h2 id="Git仓库合并error-refusing-to-merge-unrelated-histories"><a href="#Git仓库合并error-refusing-to-merge-unrelated-histories" class="headerlink" title="Git仓库合并error: refusing to merge unrelated histories"></a>Git仓库合并error: refusing to merge unrelated histories</h2><blockquote>
+<p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012145252/article/details/80628451">该博客solved</a></p>
+<p>注：本地新建文件夹开始git remote add操作前，需先git init，否则报错fatal: not a git repository (or any of the parent directories): .git</p>
+</blockquote>
+<p>环境：系统：Win10，git版本：2.42.0.windows.2</p>
+<p>问题：本地有一个初始化的git仓库，GitHub端手动创建了private库（含README文件），想要把本地合并到云端出现错误。</p>
+<p>解决方案：git使用不当。一般需先创建云端库再clone下来后更新代码。若遇到代码先于仓库的情况，从远程库拉取代码并将当前分支同其合并，使用<code>git pull &lt;remoteRepoAvatar&gt; master --allow-unrelated-histories</code></p>
+<p>之后完成本地更新commit等操作后push到远端即可。</p>
 
                 
             </div>
@@ -384,7 +410,7 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/2024/03/07/yi-xie-ruan-jian-jing-yan-bi-ji/">http://frecoder007.github.io/2024/03/07/yi-xie-ruan-jian-jing-yan-bi-ji/</a>
+                    <a href="http://frecoder007.github.io/2024/07/08/bug-pai-zhang-ji-lu-ben/">http://frecoder007.github.io/2024/07/08/bug-pai-zhang-ji-lu-ben/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -501,7 +527,7 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
         repo: 'frecoder007.github.io',
         owner: 'frecoder007',
         admin: "frecoder007",
-        id: '2024-03-07T20-32-48',
+        id: '2024-07-08T13-18-09',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -529,17 +555,18 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/07/07/ben-ke-bi-she-zhi-xie/">
+                <a href="/2024/07/08/bug-pai-zhang-ji-lu-ben/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="毕业论文致谢">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="bug排障记录本">
                         
-                        <span class="card-title">毕业论文致谢</span>
+                        <span class="card-title">bug排障记录本</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -549,9 +576,9 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -560,11 +587,12 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%96%87%E5%AD%97/">
-                        <span class="chip bg-color">文字</span>
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
+                        <span class="chip bg-color">技术杂谈</span>
                     </a>
                     
                 </div>
@@ -578,13 +606,13 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/11/03/jupyternotebook-de-yi-chong-an-zhuang-jiao-cheng/">
+                <a href="/2024/07/07/hai-xiang-wo-liao-ma/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="jupyternotebook的一种安装教程">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="嗨~想我了吗">
                         
-                        <span class="card-title">jupyternotebook的一种安装教程</span>
+                        <span class="card-title">嗨~想我了吗</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -595,7 +623,7 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
                             </span>
                         <span class="publish-author">
                             
@@ -608,8 +636,8 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
-                        <span class="chip bg-color">技术杂谈</span>
+                    <a href="/tags/ACG/">
+                        <span class="chip bg-color">ACG</span>
                     </a>
                     
                 </div>
@@ -664,6 +692,9 @@ Origin应用已经保存的格式：F7。当保存完主题之后，下次我们
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.js"></script>
 
 
 <!-- 代码语言 -->
