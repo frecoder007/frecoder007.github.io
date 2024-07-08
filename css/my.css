@@ -1,1 +1,9 @@
 /* Here is your custom css styles. */
+@font-face{
+    font-family: 'SiyuanSong';
+    src: url('../font/SiyuanSong.otf');
+}
+
+body{
+    font-family: 'SiyuanSong';
+}

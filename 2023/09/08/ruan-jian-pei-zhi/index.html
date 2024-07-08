@@ -325,7 +325,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    662
+                    664
                 </div>
                 
 
@@ -349,6 +349,7 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
         
         <!-- 是否加载使用自带的 prismjs. -->
         <link rel="stylesheet" href="/libs/prism/prism.css">
+        <script src="/libs/prism/prism.js"></script>
         
 
         
@@ -362,7 +363,10 @@ Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon
 <h3 id="Anaconda安装"><a href="#Anaconda安装" class="headerlink" title="Anaconda安装"></a>Anaconda安装</h3><p>首先从<a target="_blank" rel="noopener" href="https://pymatgen.org/installation.html#conda-based-install">这个页面</a>上安装anaconda，这里提供的是miniconda版本。</p>
 <p>其次，常规来说，安装了Anaconda发行版时已经自动为你安装了Jupyter Notebook的，但如果没有自动安装，那么就在终端（Linux或macOS的“终端”，Windows的“Anaconda Prompt”，以下均简称“终端”）中输入以下命令安装：<code>conda install jupyter notebook</code></p>
 <h3 id="安装numpy-pil库"><a href="#安装numpy-pil库" class="headerlink" title="安装numpy, pil库"></a>安装numpy, <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45326961">pil库</a></h3><p>在网页版jupyter notebook点击new，选择Terminal，输入<code>pip install numpy</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install Pillow </span><br><span class="line"><span class="comment"># python更新库函数语法</span></span><br><span class="line">python3 -m pip install --upgrade pip</span><br><span class="line">python3 -m pip install --upgrade Pillow</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> Pillow 
+<span class="token comment"># python更新库函数语法</span>
+python3 <span class="token parameter variable">-m</span> pip <span class="token function">install</span> <span class="token parameter variable">--upgrade</span> pip
+python3 <span class="token parameter variable">-m</span> pip <span class="token function">install</span> <span class="token parameter variable">--upgrade</span> Pillow<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="VMware虚拟机配置踩坑"><a href="#VMware虚拟机配置踩坑" class="headerlink" title="VMware虚拟机配置踩坑"></a>VMware虚拟机配置踩坑</h2><p><code>2023-09-08</code>今天在折腾虚拟机的时候尝试使用桥接模式将VMware Ubuntu和宿主机作为两台设备相互通信，但是在校园网环境下执行的时候，按照教程设置好了IP地址、网关、子网掩码后，发现可以ping通主机但无法ping通百度。查看了多个博客后，记录一个比较符合我情况的<a target="_blank" rel="noopener" href="https://blog.csdn.net/zzf1510711060/article/details/80682480">经验帖</a>：</p>
 <blockquote>

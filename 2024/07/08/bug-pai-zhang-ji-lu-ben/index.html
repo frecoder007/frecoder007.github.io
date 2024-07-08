@@ -325,7 +325,7 @@ Git基本用法git测试联通性ssh -T git@github.com
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    562
+                    682
                 </div>
                 
 
@@ -349,6 +349,7 @@ Git基本用法git测试联通性ssh -T git@github.com
         
         <!-- 是否加载使用自带的 prismjs. -->
         <link rel="stylesheet" href="/libs/prism/prism.css">
+        <script src="/libs/prism/prism.js"></script>
         
 
         
@@ -364,18 +365,19 @@ Git基本用法git测试联通性ssh -T git@github.com
 <p>之后可以使用<code>git remote -v</code>检查项目中已有的远程仓库列表（该命令会显示远程仓库的名称和URL，如不加-v，则显示所有的AvatarName）</p>
 <h3 id="拉取和推送代码"><a href="#拉取和推送代码" class="headerlink" title="拉取和推送代码"></a>拉取和推送代码</h3><p>一般的，本地更新完代码后，需要执行<code>git add .``git commit -m &quot;updateLogs&quot;</code>和<code>git push</code></p>
 <p>要从新的远程仓库拉取最新的代码，可以使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull &lt;remoteRepoAvatar&gt; &lt;分支名称&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">git pull &lt;remoteRepoAvatar&gt; &lt;分支名称&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>将 <code>&lt;分支名称&gt;</code> 替换为你要拉取的分支名称，例如 <code>master</code>。</p>
 <blockquote>
-<p>拉取失败，见<a target="_blank" rel="noopener" href="https://geek-docs.com/git/git-questions/30_git_fail_to_use_git_pull_couldnt_find_remote_ref_xxx.html">此解决办法</a></p>
+<p>如遇到git拉取失败，可参考<a target="_blank" rel="noopener" href="https://geek-docs.com/git/git-questions/30_git_fail_to_use_git_pull_couldnt_find_remote_ref_xxx.html">此博客</a>寻找解决办法</p>
 </blockquote>
 <p>推送代码：</p>
 <p><code>git push</code>命令用于从将本地的分支版本上传到远程并合并。</p>
 <p>命令格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>如果本地分支名与远程分支名相同，则可以省略冒号，远程主机名即为自定义的<code>remoteRepoAvatar</code></p>
+<p>这里总结了一份<a href="gitcheatsheet.pdf">gitcheatsheet</a>，方便用到的时候查询。</p>
 <h2 id="Git仓库合并error-refusing-to-merge-unrelated-histories"><a href="#Git仓库合并error-refusing-to-merge-unrelated-histories" class="headerlink" title="Git仓库合并error: refusing to merge unrelated histories"></a>Git仓库合并error: refusing to merge unrelated histories</h2><blockquote>
 <p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012145252/article/details/80628451">该博客solved</a></p>
 <p>注：本地新建文件夹开始git remote add操作前，需先git init，否则报错fatal: not a git repository (or any of the parent directories): .git</p>
@@ -384,6 +386,8 @@ Git基本用法git测试联通性ssh -T git@github.com
 <p>问题：本地有一个初始化的git仓库，GitHub端手动创建了private库（含README文件），想要把本地合并到云端出现错误。</p>
 <p>解决方案：git使用不当。一般需先创建云端库再clone下来后更新代码。若遇到代码先于仓库的情况，从远程库拉取代码并将当前分支同其合并，使用<code>git pull &lt;remoteRepoAvatar&gt; master --allow-unrelated-histories</code></p>
 <p>之后完成本地更新commit等操作后push到远端即可。</p>
+<h2 id="Hexo-Matery主题代码块故障"><a href="#Hexo-Matery主题代码块故障" class="headerlink" title="Hexo-Matery主题代码块故障"></a>Hexo-Matery主题代码块故障</h2><p>折磨了我好久啊啊啊啊啊不想写过程了ww，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/One_OR_Five/article/details/138749709">该博客</a>的解决办法。</p>
+<h2 id="站内字体美化"><a href="#站内字体美化" class="headerlink" title="站内字体美化"></a>站内字体美化</h2><p>本站采用的衬线字体为<code>思源宋体</code>，经查询该字体为<code>开源免费</code>，详情请见<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif/blob/master/README-CN.md">此链接</a>。如您喜欢该字体，可参考<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1622400">此教程</a>美化您的网站。</p>
 
                 
             </div>
@@ -609,8 +613,7 @@ Git基本用法git测试联通性ssh -T git@github.com
                 <a href="/2024/07/07/hai-xiang-wo-liao-ma/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="嗨~想我了吗">
+                        <img src="https://upload-bbs.miyoushe.com/upload/2024/03/05/166505356/7d8cedc1384941e79c2f547602bcfa0d_7826663225499711123.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" class="responsive-img" alt="嗨~想我了吗">
                         
                         <span class="card-title">嗨~想我了吗</span>
                     </div>
