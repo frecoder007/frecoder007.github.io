@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>芝士知识</title>
+      <link href="/2024/07/09/zhi-shi-za-tan/"/>
+      <url>/2024/07/09/zhi-shi-za-tan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="影视飓风使用的字幕版式"><a href="#影视飓风使用的字幕版式" class="headerlink" title="@影视飓风使用的字幕版式"></a>@影视飓风使用的字幕版式</h2><p><code>字符</code>字体:思源黑体，字形:粗体，颜色:白色，大小:50，字距:0</p><p><code>变换</code>位置:X:1920，Y:150</p><p><code>投影</code>色彩:黑色，偏移:X:4，Y:-4，模糊:4，不透明度:75</p><p><code>备注</code>适用于 4096*2048分辨率，参考数值，非硬性规定，可自行调整</p><h2 id="关于教育年级“级”与“届”的疑惑"><a href="#关于教育年级“级”与“届”的疑惑" class="headerlink" title="关于教育年级“级”与“届”的疑惑"></a>关于教育年级“级”与“届”的疑惑</h2><p>重庆市教委对南岸区一名家长就此提出的疑问进行的<a href="https://jw.cq.gov.cn/igixmj/xjgk/201911/tGovMsgBox_725306.html">官方回复</a>中表示，“级”与“届”有准确的称呼，<strong>学生入学时的年级称为“级”，毕业时的年级称为“届”。</strong></p><h2 id="字体设计相关"><a href="#字体设计相关" class="headerlink" title="字体设计相关"></a>字体设计相关</h2><p>西方国家字母体系分为两类：serif 以及 sans-serif。<br>serif 是衬线字体，意思是在字的笔画开始、结束的地方有额外的装饰，而且笔画的粗细会有所不同。相反的，sans-serif 就没有这些额外的装饰，而且笔画的粗细差不多。<br>serif 字体容易识别，它强调了每个字母笔画的开始和结束，因此易读性比较高，sans serif 则比较醒目。在中文阅读的情况下，适合使用 serif 字体（如宋体）进行排版，易于换行阅读的识别性，避免发生行间的阅读错误。</p><h3 id="Sans-Serif"><a href="#Sans-Serif" class="headerlink" title="Sans Serif"></a>Sans Serif</h3><p>无衬线体，对中文而言指的就是黑体。并不是具体一款字体，而是一类字体，选择它其实等于选择这类字体中优先级最高的那款字体（交给 fontconfig 自动决定）。Sans 表示法语的“无”。有时简写成“Sans”。常见的无衬线体有 Arial、Helvetica、DejaVu Sans、微软雅黑和思源黑体。Ubuntu 也是一个无衬线体。无衬线体因为笔画简单没有复杂装饰，较为适合像素密度较低的普通电脑屏幕阅读，也受崇尚简单的现代人青睐。</p><h3 id="Serif"><a href="#Serif" class="headerlink" title="Serif"></a>Serif</h3><p>衬线体，有时叫做白体。对于中文来说例子有宋体&#x2F;明体（这些词和“黑体”一样，都是指一类字体）；对于英文来说具体到字体名的例子有 Times 和 Garamond。一般认为衬线可以引导人阅读的视线，提高阅读速度和准度。</p><h3 id="Cursive-Script"><a href="#Cursive-Script" class="headerlink" title="Cursive (Script)"></a>Cursive (Script)</h3><p>（草书）手写体。严格的对应有 Itc Zapf Chancery、Zapfino 和行书&#x2F;行楷。一些系统会使用有手写风格而不过分潦草的字体如 Comic Sans 代替，此时就应该使用楷书搭配。</p><h3 id="Monospace"><a href="#Monospace" class="headerlink" title="Monospace"></a>Monospace</h3><p>等宽字体，指字符宽度相同的一类字体。注意中英文宽度应该不是相同而是成整数倍关系——一般来说中文字符在这些字体中的宽度是西文的两倍（wcwidth）。</p><h3 id="Proportional"><a href="#Proportional" class="headerlink" title="Proportional"></a>Proportional</h3><p>比例字体，指字符宽度存在变化的字体。</p><h3 id="Bitmap-Raster"><a href="#Bitmap-Raster" class="headerlink" title="Bitmap (Raster)"></a>Bitmap (Raster)</h3><p>点阵字体，或者叫位图字体。以像素点形式存储在电脑中。</p><h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>矢量字体，以曲线形式存储在电脑中。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 芝士 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>bug排障记录本</title>
       <link href="/2024/07/08/bug-pai-zhang-ji-lu-ben/"/>
       <url>/2024/07/08/bug-pai-zhang-ji-lu-ben/</url>
@@ -84,7 +103,7 @@
       <link href="/2024/03/07/ruan-jian-shi-yong-jing-yan/"/>
       <url>/2024/03/07/ruan-jian-shi-yong-jing-yan/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>本文为自己使用工科软件时可能会随手记录的一些方法，记录些七零八落的小知识</p></blockquote><h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Theme Organizer（快捷键F7），找到之前存好的主题，点击应用即可（Apply Now）。</p><h2 id="Zview导入弹窗问题"><a href="#Zview导入弹窗问题" class="headerlink" title="Zview导入弹窗问题"></a>Zview导入弹窗问题</h2><p>Q：我安装了另外的ZView，显示this program is operating in a demonstration mode. For full authorization，please contact scribner associates or your distributor，这是怎么回事啊</p><p>A：直接导入TXT出现了这个情况，，删掉TXT里面非数字部分后目前就解决了</p><p>SA：未解决：删掉最后那两列degree和别的值好像就不缺了，只保留frequency Z’ 和Z’’，然后又用数字形式保存到了txt里</p><h2 id="Adobe快捷键"><a href="#Adobe快捷键" class="headerlink" title="Adobe快捷键"></a>Adobe快捷键</h2><h3 id="Photoshop"><a href="#Photoshop" class="headerlink" title="Photoshop"></a>Photoshop</h3><p>Ctrl+T：修改图层大小<br>Ctrl+鼠标左键：选中图层<br>Ctrl+D：取消选区</p><h3 id="Premier"><a href="#Premier" class="headerlink" title="Premier"></a>Premier</h3><p>Ctrl + alt + 鼠标左键：左右替换素材<br>alt + 出入点 + 鼠标左键：从素材箱直接替换到视频轨道</p><h3 id="影视飓风使用的字幕版式"><a href="#影视飓风使用的字幕版式" class="headerlink" title="@影视飓风使用的字幕版式"></a>@影视飓风使用的字幕版式</h3><h4 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h4><p>字体:思源黑体，字形:粗体</p><p>颜色:白色，大小:50，字距:0</p><h4 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h4><p>位置:X:1920，Y:150</p><h4 id="投影"><a href="#投影" class="headerlink" title="投影"></a>投影</h4><p>色彩:黑色<br>偏移:X:4，Y:-4<br>模糊:4<br>不透明度:75</p><h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>适用于 4096*2048分辨率<br>参考数值，非硬性规定，可自行调整</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本文为自己使用工科软件时可能会随手记录的一些方法，记录些七零八落的小知识</p></blockquote><h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>应用已经保存的格式：F7。当保存完主题之后，下次我们想使用存好的这个作图格式时，先用默认设置画出初始图，然后选择菜单栏的Prefrences-Theme Organizer（快捷键F7），找到之前存好的主题，点击应用即可（Apply Now）。</p><h2 id="Zview导入弹窗问题"><a href="#Zview导入弹窗问题" class="headerlink" title="Zview导入弹窗问题"></a>Zview导入弹窗问题</h2><p>Q：我安装了另外的ZView，显示this program is operating in a demonstration mode. For full authorization，please contact scribner associates or your distributor，这是怎么回事啊</p><p>A：直接导入TXT出现了这个情况，，删掉TXT里面非数字部分后目前就解决了</p><p>SA：未解决：删掉最后那两列degree和别的值好像就不缺了，只保留frequency Z’ 和Z’’，然后又用数字形式保存到了txt里</p><h2 id="Adobe快捷键"><a href="#Adobe快捷键" class="headerlink" title="Adobe快捷键"></a>Adobe快捷键</h2><h3 id="Photoshop"><a href="#Photoshop" class="headerlink" title="Photoshop"></a>Photoshop</h3><p>Ctrl+T：修改图层大小<br>Ctrl+鼠标左键：选中图层<br>Ctrl+D：取消选区</p><h3 id="Premier"><a href="#Premier" class="headerlink" title="Premier"></a>Premier</h3><p>Ctrl + alt + 鼠标左键：左右替换素材<br>alt + 出入点 + 鼠标左键：从素材箱直接替换到视频轨道</p><h2 id="Typora快捷键"><a href="#Typora快捷键" class="headerlink" title="Typora快捷键"></a>Typora快捷键</h2><p>ctrl + &#x2F;：切换编辑语法模式&#x2F;预览模式<br>ctrl + 1 <del>6：标题1</del>6 （最多六级标题）<br>ctrl + B：粗体<br>ctrl + I：斜体<br>ctrl + T：表格<br>[TOC] Enter：生成目录<br><strong>&#96;&#96;&#96;+Enter</strong>：代码块<br>ctrl+L：选中一整行<br>ctrl+D：选中单词<br>ctrl+K：插入链接<br>alt+shift+5：删除<br>ctrl+E：选中当前格式文本<br>ctrl+H：替换（系统通用）<br>ctrl+U：下划线（html标签格式）</p><p>Typora编辑器默认换行行间距过大，<a href="https://blog.csdn.net/qq_41731201/article/details/118248190">解决方案</a>。</p><h2 id="14个你必须要知道的ubuntu快捷键"><a href="#14个你必须要知道的ubuntu快捷键" class="headerlink" title="14个你必须要知道的ubuntu快捷键"></a>14个你必须要知道的ubuntu快捷键</h2><p>news 2023&#x2F;8&#x2F;26 9:22:08<br>1、 Super 键：打开活动搜索界面<br>2、 Ctrl+Alt+T：打开 Ubuntu 终端窗口<br>3、 Super+L 或 Ctrl+Alt+L：锁屏<br>4、 Super+D or Ctrl+Alt+D：显示桌面<br>5、 Super+A：显示应用程序菜单<br>6、 Super+Tab 或 Alt+Tab：在运行中的应用程序间切换<br>7、 Super+箭头：移动窗口位置<br>8、 Super+M：切换到通知栏<br>9、 Super+空格：切换输入法（用于多语言设置）<br>10、 Alt+F2：运行控制台<br>11、 Ctrl+Q：关闭应用程序窗口<br>12、 Ctrl+Alt+箭头：切换工作区<br>13、 Ctrl+Alt+Del：注销<br><del>14 、DIY 快捷键</del></p>]]></content>
       
       
       

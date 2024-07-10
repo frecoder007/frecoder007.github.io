@@ -338,7 +338,7 @@ body.DarkMode #waline textarea {
     white-space: pre-line
 }
 /* 黑夜模式动画 */
-.Cuteen_DarkSky,
+/* .Cuteen_DarkSky,
 .Cuteen_DarkSky:before {
     content: '';
     position: fixed;
@@ -354,7 +354,7 @@ body.DarkMode #waline textarea {
 }
 
 .Cuteen_DarkSky:before {
-    transition: 2s ease all;
+    transition: 2s ease all; 
     opacity: 0;
     background: linear-gradient(#4c3f6d, #6c62bb, #93b1ed);
 }
@@ -373,8 +373,8 @@ body.DarkMode #waline textarea {
     -webkit-animation: CuteenPlanetMove 2s cubic-bezier(0.7, 0, 0, 1);
     animation: CuteenPlanetMove 2s cubic-bezier(0.7, 0, 0, 1);
     transform-origin: center bottom;
-}
-
+} */
+/* 
 @-webkit-keyframes CuteenPlanetMove {
     0% {
         transform: rotate(0);
@@ -402,7 +402,7 @@ body.DarkMode #waline textarea {
     border-radius: 50%;
     content: '';
     background: linear-gradient(#fefefe, #fffbe8);
-}
+} */
 /*黑夜模式切换动态背景*/
 @keyframes animStar {
     from {
