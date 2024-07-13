@@ -1,5 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你不要我了嘛~", clearTimeout(st)) : (document.title = 
+            "✧谢谢你回来～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+        })
+    </script>
 
 
 <head>
@@ -335,6 +344,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             data-tagname="芝士" style="background-color: #E8F8F5;">芝士
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%85%B3%E4%BA%8E/" title="关于: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="关于" style="background-color: #FEF9E7;">关于
                         <span class="tag-length">1</span>
                     </span>
                 </a>

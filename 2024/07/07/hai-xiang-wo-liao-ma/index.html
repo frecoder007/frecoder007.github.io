@@ -1,5 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你不要我了嘛~", clearTimeout(st)) : (document.title = 
+            "✧谢谢你回来～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+        })
+    </script>
 
 
 <head>

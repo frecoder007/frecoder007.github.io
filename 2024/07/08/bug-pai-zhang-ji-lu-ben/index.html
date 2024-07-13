@@ -1,5 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你不要我了嘛~", clearTimeout(st)) : (document.title = 
+            "✧谢谢你回来～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+        })
+    </script>
 
 
 <head>
@@ -318,21 +327,21 @@ Git基本用法git测试联通性ssh -T git@github.com
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-08
+                    2024-07-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    682
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    6 分
                 </div>
                 
 
@@ -386,8 +395,136 @@ Git基本用法git测试联通性ssh -T git@github.com
 <p>问题：本地有一个初始化的git仓库，GitHub端手动创建了private库（含README文件），想要把本地合并到云端出现错误。</p>
 <p>解决方案：git使用不当。一般需先创建云端库再clone下来后更新代码。若遇到代码先于仓库的情况，从远程库拉取代码并将当前分支同其合并，使用<code>git pull &lt;remoteRepoAvatar&gt; master --allow-unrelated-histories</code></p>
 <p>之后完成本地更新commit等操作后push到远端即可。</p>
-<h2 id="Hexo-Matery主题代码块故障"><a href="#Hexo-Matery主题代码块故障" class="headerlink" title="Hexo-Matery主题代码块故障"></a>Hexo-Matery主题代码块故障</h2><p>折磨了我好久啊啊啊啊啊不想写过程了ww，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/One_OR_Five/article/details/138749709">该博客</a>的解决办法。</p>
-<h2 id="站内字体美化"><a href="#站内字体美化" class="headerlink" title="站内字体美化"></a>站内字体美化</h2><p>本站采用的衬线字体为<code>思源宋体</code>，经查询该字体为<code>开源免费</code>，详情请见<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif/blob/master/README-CN.md">此链接</a>。如您喜欢该字体，可参考<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1622400">此教程</a>美化您的网站。</p>
+<h2 id="图床搭建"><a href="#图床搭建" class="headerlink" title="图床搭建"></a>图床搭建</h2><h3 id="什么是图床？"><a href="#什么是图床？" class="headerlink" title="什么是图床？"></a>什么是图床？</h3><p>图床工具（Image Hosting）是一种将图片文件上传到互联网，并提供图片链接的工具。通过图床工具，用户可以将自己的图片托管到第三方服务器上，以获得更好的可靠性和稳定性。</p>
+<h3 id="解决方案？"><a href="#解决方案？" class="headerlink" title="解决方案？"></a>解决方案？</h3><p>以Github公开库作为服务器，采用PicGo + github +Typora作为图片解决方案。</p>
+<p>PicGo<a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here">官方指导文档</a>。</p>
+<h2 id="Hexo-Matery主题美化合辑"><a href="#Hexo-Matery主题美化合辑" class="headerlink" title="Hexo-Matery主题美化合辑"></a>Hexo-Matery主题美化合辑</h2><h3 id="代码块故障修复"><a href="#代码块故障修复" class="headerlink" title="代码块故障修复"></a>代码块故障修复</h3><p>折磨了我好久啊啊啊啊啊不想写过程了ww，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/One_OR_Five/article/details/138749709">该博客</a>的解决办法。</p>
+<p>在<code>matery.css</code>文件中添加暗色背景来解决此问题。更改<code>../themes/hexo-theme-matery/source/css/matery.css</code>文件中的相关代码如下：</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">pre</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 2rem 1rem 1rem 3rem <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token comment">/*添加*/</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 1rem 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #272822<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+    <span class="token comment">/*添加*/</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0.35rem<span class="token punctuation">;</span>
+    <span class="token property">tab-size</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>行数与高亮问题参考此<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/issues/915">Github issue</a>配置即可。更改根目录下的<code>_config.yml</code>文件相关代码如下</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> prismjs
+<span class="token key atrule">highlight</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="站内字体美化"><a href="#站内字体美化" class="headerlink" title="站内字体美化"></a>站内字体美化</h3><p>本站采用的衬线字体为<code>思源宋体</code>，经查询该字体为<code>开源免费</code>，详情请见<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif/blob/master/README-CN.md">此链接</a>。如您喜欢该字体，可参考<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1622400">此教程</a>美化您的网站。</p>
+<h3 id="站内滚动条美化"><a href="#站内滚动条美化" class="headerlink" title="站内滚动条美化"></a>站内滚动条美化</h3><blockquote>
+<p>由<a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-21">特仑苏</a>大佬提供，博客页3.4</p>
+</blockquote>
+<p>在<code>themes\hexo-theme-matery\source\css\matery.css</code>中添加如下代码，可根据自己的主题修改颜色代码。</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/* 滚动条 */</span>
+<span class="token selector">::-webkit-scrollbar-thumb</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #FF2A68<span class="token punctuation">;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">-webkit-linear-gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 25%<span class="token punctuation">,</span>transparent 25%<span class="token punctuation">,</span>transparent 50%<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 75%<span class="token punctuation">,</span>transparent 75%<span class="token punctuation">,</span>transparent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">::-webkit-scrollbar-track</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffcacaff<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">::-webkit-scrollbar</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="添加博客趣味标题"><a href="#添加博客趣味标题" class="headerlink" title="添加博客趣味标题"></a>添加博客趣味标题</h3><p>参考<a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html#toc-heading-7">BlueSky01st</a>的做法。在博客的主题文件（路径为<code>themes/matery/layout/layout.ejs</code>）中添加如下html代码。</p>
+<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">var</span> OriginTitile <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">,</span>
+        st<span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"visibilitychange"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> document<span class="token punctuation">.</span>hidden <span class="token operator">?</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"你不要我了嘛~"</span><span class="token punctuation">,</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span>st<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span> 
+            <span class="token string">"✧谢谢你回来～"</span><span class="token punctuation">,</span> st <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+                document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitile
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">3e3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="标题大小自适应设备"><a href="#标题大小自适应设备" class="headerlink" title="标题大小自适应设备"></a>标题大小自适应设备</h3><p>参考<a target="_blank" rel="noopener" href="https://chen-shang.github.io/2019/08/15/gong-ju-kong/hexo/hexo-theme-matery-zhu-ti-you-hua/">涓涓细流博客</a>更改<code>matery/source/css/matery.css</code>文件</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css">---------------------------- source/css/matery.css ----------------------------
+
+<span class="token comment">/*全局基础样式*/</span>
+<span class="token comment">/*小屏幕下(手机类)的样式*/</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 601px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 95%<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token selector">header .brand-logo .logo-span</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token selector">.bg-cover .title</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 3rem<span class="token punctuation">;</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+        <span class="token property">line-height</span><span class="token punctuation">:</span> 1.85em<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">/*中等屏幕下(平板类)的样式*/</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 600px<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 992px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 90%<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token selector">header .brand-logo .logo-span</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token selector">.bg-cover .title</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 4rem<span class="token punctuation">;</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+        <span class="token property">line-height</span><span class="token punctuation">:</span> 1.85em<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/*大屏幕下(桌面类)的样式*/</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 993px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.container</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 85%<span class="token punctuation">;</span>
+        <span class="token property">max-width</span><span class="token punctuation">:</span> 1125px<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token selector">.post-container</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 90%<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+        <span class="token property">max-width</span><span class="token punctuation">:</span> 1250px<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token selector">header .brand-logo .logo-span</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token selector">.bg-cover .title</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 4rem<span class="token punctuation">;</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+        <span class="token property">line-height</span><span class="token punctuation">:</span> 1.85em<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token property">来源</span><span class="token punctuation">:</span> 涓涓细流
+<span class="token property">文章作者</span><span class="token punctuation">:</span> 陈尚
+<span class="token property">文章链接</span><span class="token punctuation">:</span> <span class="token property">https</span><span class="token punctuation">:</span>//chen-shang.github.io/2019/08/15/gong-ju-kong/hexo/hexo-theme-matery-zhu-ti-you-hua/
+本文章著作权归作者所有，任何形式的转载都请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>

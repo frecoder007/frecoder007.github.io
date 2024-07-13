@@ -1,5 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你不要我了嘛~", clearTimeout(st)) : (document.title = 
+            "✧谢谢你回来～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+        })
+    </script>
 
 
 <head>
@@ -339,6 +348,15 @@
                     </span>
                 </a>
                 
+                
+                <a href="/tags/%E5%85%B3%E4%BA%8E/" title="关于: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="关于" style="background-color: #FEF9E7;">关于
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -363,7 +381,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"ACG","weight":1,"link":"/tags/ACG/"},{"text":"文字","weight":2,"link":"/tags/文字/"},{"text":"技术杂谈","weight":3,"link":"/tags/技术杂谈/"},{"text":"芝士","weight":1,"link":"/tags/芝士/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"ACG","weight":1,"link":"/tags/ACG/"},{"text":"文字","weight":2,"link":"/tags/文字/"},{"text":"技术杂谈","weight":3,"link":"/tags/技术杂谈/"},{"text":"芝士","weight":1,"link":"/tags/芝士/"},{"text":"关于","weight":1,"link":"/tags/关于/"}], {
         autoResize: true
     });
 </script>
