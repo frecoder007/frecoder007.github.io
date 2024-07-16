@@ -327,21 +327,21 @@ Git基本用法git测试联通性ssh -T git@github.com
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-13
+                    2024-07-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -457,6 +457,31 @@ Git基本用法git测试联通性ssh -T git@github.com
         <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>在html中相关类似代码如下：（本质一样）</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh-CN<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">  
+<span class="token comment">// 浏览器标题切换</span>
+    <span class="token operator">&lt;</span>link id<span class="token operator">=</span><span class="token string">"favicon"</span> rel<span class="token operator">=</span><span class="token string">"shortcut icon"</span> href<span class="token operator">=</span><span class="token string">"//common.cnblogs.com/favicon.svg"</span> type<span class="token operator">=</span><span class="token string">"image/svg+xml"</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token comment">// 网页小图标</span>
+<span class="token keyword">var</span> OriginTitile <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">;</span>    <span class="token comment">// 保存之前页面的标题</span>
+<span class="token keyword">var</span> titleTime<span class="token punctuation">;</span>  
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'visibilitychange'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>  
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>hidden<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>  
+        document<span class="token punctuation">.</span>title <span class="token operator">=</span><span class="token string">'你不要我了嘛=7='</span><span class="token punctuation">;</span> 
+        <span class="token function">clearTimeout</span><span class="token punctuation">(</span>titleTime<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>  
+        document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'我喜欢你啊'</span><span class="token punctuation">;</span> 
+        titleTime <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  
+            document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitile<span class="token punctuation">;</span>  
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2秒后恢复原标题</span>
+    <span class="token punctuation">&#125;</span>  
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
 <h3 id="标题大小自适应设备"><a href="#标题大小自适应设备" class="headerlink" title="标题大小自适应设备"></a>标题大小自适应设备</h3><p>参考<a target="_blank" rel="noopener" href="https://chen-shang.github.io/2019/08/15/gong-ju-kong/hexo/hexo-theme-matery-zhu-ti-you-hua/">涓涓细流博客</a>更改<code>matery/source/css/matery.css</code>文件</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css">---------------------------- source/css/matery.css ----------------------------
 
@@ -525,6 +550,13 @@ Git基本用法git测试联通性ssh -T git@github.com
 <span class="token property">文章链接</span><span class="token punctuation">:</span> <span class="token property">https</span><span class="token punctuation">:</span>//chen-shang.github.io/2019/08/15/gong-ju-kong/hexo/hexo-theme-matery-zhu-ti-you-hua/
 本文章著作权归作者所有，任何形式的转载都请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="背景动态线条"><a href="#背景动态线条" class="headerlink" title="背景动态线条"></a>背景动态线条</h3><p>在<code>themes/hexo-theme-matery/layout/layout.ejs</code>文件中添加如下代码：</p>
+<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token comment">&lt;!--动态线条背景--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span>
+<span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>122 103 238<span class="token punctuation">"</span></span> <span class="token attr-name">opacity</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>0.7<span class="token punctuation">'</span></span> <span class="token attr-name">zIndex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-2<span class="token punctuation">"</span></span> <span class="token attr-name">count</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>200<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="部署游戏项目"><a href="#部署游戏项目" class="headerlink" title="部署游戏项目"></a>部署游戏项目</h3><p>见<a target="_blank" rel="noopener" href="https://zwxo.github.io/articles/36588/">此博客</a>，留作备份用，暂不添加此功能。</p>
 
                 
             </div>
@@ -1009,6 +1041,28 @@ Git基本用法git测试联通性ssh -T git@github.com
             
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">7.7k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
             <!-- 运行天数提醒. -->
             
                 <span id="sitetime"> Loading ...</span>
@@ -1216,6 +1270,10 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
+    <!--动态线条背景-->
+    <script type="text/javascript"
+    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
 
     
 
@@ -1232,15 +1290,6 @@ $(function () {
         </script>
     
     
-    
-        
-        <script type="text/javascript">
-            // 只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
-            }
-        </script>
     
 
     <!-- 雪花特效 -->
