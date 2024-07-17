@@ -201,7 +201,7 @@ body.DarkMode .aplayer {
     -ms-user-select: none;
     user-select: none;
     line-height: normal;
-    position: relative;
+    position: fixed;
 }
 body.DarkMode .aplayer .aplayer-list ol li.aplayer-list-light {
     background: #666666;
