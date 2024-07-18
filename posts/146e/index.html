@@ -326,21 +326,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-17
+                    2024-07-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -416,6 +416,25 @@
   <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
   <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="链接永久化"><a href="#链接永久化" class="headerlink" title="链接永久化"></a>链接永久化</h2><p>由于个人文章内容不断更新，文章标题也会发生一定的更改，为了不影响已经被引用的文章链接，故选择创建永久链接的方式生成文章的唯一标识符，这样通过该链接能唯一定位到对应的文章。</p>
+<p>安装插件：Git Bash中输入命令<code>npm install hexo-abbrlink --save</code></p>
+<p>调整根目录的_config.yml，添加以下代码</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">abbrlink</span><span class="token punctuation">:</span>
+    <span class="token key atrule">alg</span><span class="token punctuation">:</span> crc16   <span class="token comment">#算法： crc16(default) and crc32</span>
+    <span class="token key atrule">rep</span><span class="token punctuation">:</span> hex     <span class="token comment">#进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为十进制。</span>
+
+<span class="token comment"># The generated link will look like the following:</span>
+<span class="token comment"># crc16 &amp; hex</span>
+<span class="token comment"># https://post.zz173.com/posts/66c8.html</span>
+<span class="token comment"># crc16 &amp; dec</span>
+<span class="token comment"># https://post.zz173.com/posts/65535.html</span>
+<span class="token comment"># crc32 &amp; hex</span>
+<span class="token comment"># https://post.zz173.com/posts/8ddf18fb.html</span>
+<span class="token comment"># crc32 &amp; dec</span>
+<span class="token comment"># https://post.zz173.com/posts/1690090958.html</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>并修改该文件内的premalink值：<code>permalink: posts/:abbrlink/</code></p>
+<p>实际工作流程为引入abbrlink插件后，<code>hexo g</code>的时候会根据当前md的标题和时间生成唯一哈希映射值，添加到对应md文件中的Front-matter中作为唯一标识符。局限性是crc16算法仅支持65536个哈希值，不过插件在生成文章标识符的时候遇到相同值会尝试更换到不同值。</p>
 <h2 id="站内字体美化"><a href="#站内字体美化" class="headerlink" title="站内字体美化"></a>站内字体美化</h2><p>本站采用的衬线字体为<code>思源宋体</code>，经查询该字体为<code>开源免费</code>，详情请见<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif/blob/master/README-CN.md">此链接</a>。如您喜欢该字体，可参考<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1622400">此教程</a>美化您的网站。</p>
 <h2 id="站内滚动条美化"><a href="#站内滚动条美化" class="headerlink" title="站内滚动条美化"></a>站内滚动条美化</h2><blockquote>
 <p>由<a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-21">特仑苏</a>大佬提供，博客页3.4</p>
@@ -578,7 +597,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/2024/07/16/hexo-matery-zhu-ti-zi-ding-yi-you-hua-he-ji/">http://frecoder007.github.io/2024/07/16/hexo-matery-zhu-ti-zi-ding-yi-you-hua-he-ji/</a>
+                    <a href="http://frecoder007.github.io/posts/146e/">http://frecoder007.github.io/posts/146e/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -725,7 +744,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2024/07/16/hexo-matery-zhu-ti-zi-ding-yi-you-hua-he-ji/">
+                <a href="/posts/146e/">
                     <div class="card-image">
                         
                         
@@ -771,7 +790,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/07/13/about-me/">
+                <a href="/posts/efed/">
                     <div class="card-image">
                         
                         
@@ -1041,7 +1060,7 @@ document<span class="token punctuation">.</span><span class="token function">add
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9.1k</span>
+                        class="white-color">9.4k</span>
             
             
             

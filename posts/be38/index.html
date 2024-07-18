@@ -13,10 +13,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="芝士知识, Starwineのへや">
-    <meta name="description" content="Git基本用法git测试联通性ssh -T git@github.com
-分支操作git branch列出本地所有分支，参数-r列出远程分支，-a：list both remote-tracking and local branches
-本">
+    <meta name="keywords" content="软件安装排障教程集锦, Starwineのへや">
+    <meta name="description" content="Jupyter Notebook安装教程
+2023-11-03参考资料：某乎1、某乎2
+本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸
+
+Anaconda安装首先从这个页面上安装anaconda，这里提供的是minicon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +30,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>芝士知识 | Starwineのへや</title>
+    <title>软件安装排障教程集锦 | Starwineのへや</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -273,12 +275,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">芝士知识</h1>
+                    <h1 class="description center-align post-title">软件安装排障教程集锦</h1>
                 </div>
             </div>
         </div>
@@ -302,8 +304,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%8A%9D%E5%A3%AB/">
-                                <span class="chip bg-color">芝士</span>
+                            <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
+                                <span class="chip bg-color">技术杂谈</span>
                             </a>
                         
                     </div>
@@ -318,28 +320,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-09
+                    2023-09-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-16
+                    2024-07-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    781
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    2 分
                 </div>
                 
 
@@ -363,46 +365,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Git基本用法"><a href="#Git基本用法" class="headerlink" title="Git基本用法"></a>Git基本用法</h2><h3 id="git测试联通性"><a href="#git测试联通性" class="headerlink" title="git测试联通性"></a>git测试联通性</h3><p><code>ssh -T git@github.com</code></p>
-<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><p><code>git branch</code>列出本地所有分支，参数-r列出远程分支，-a：list both remote-tracking and local branches</p>
-<h3 id="本地初始化、远程连接库"><a href="#本地初始化、远程连接库" class="headerlink" title="本地初始化、远程连接库"></a>本地初始化、远程连接库</h3><p>先使用git链接到远程仓库，用法为<code>git remote add &lt;remoteRepoAvatar&gt; &lt;url:ssh&gt; </code>，此处<code>remoteRepoAvatar</code>指的是任一字符串，用于表示这个远程仓库（可以与云端仓库名字不同）。</p>
-<p>之后可以使用<code>git remote -v</code>检查项目中已有的远程仓库列表（该命令会显示远程仓库的名称和URL，如不加-v，则显示所有的AvatarName）</p>
-<h3 id="拉取和推送代码"><a href="#拉取和推送代码" class="headerlink" title="拉取和推送代码"></a>拉取和推送代码</h3><p>一般的，本地更新完代码后，需要执行<code>git add .``git commit -m &quot;updateLogs&quot;</code>和<code>git push</code></p>
-<p>要从新的远程仓库拉取最新的代码，可以使用以下命令：</p>
-<pre class="line-numbers language-none"><code class="language-none">git pull &lt;remoteRepoAvatar&gt; &lt;分支名称&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="Jupyter-Notebook安装教程"><a href="#Jupyter-Notebook安装教程" class="headerlink" title="Jupyter Notebook安装教程"></a>Jupyter Notebook安装教程</h2><blockquote>
+<p><code>2023-11-03</code>参考资料：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33105153">某乎1</a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/242524977">某乎2</a></p>
+<p>本文是自己留存，待换电脑时重新安装软件时用，如能帮到你，万分荣幸</p>
+</blockquote>
+<h3 id="Anaconda安装"><a href="#Anaconda安装" class="headerlink" title="Anaconda安装"></a>Anaconda安装</h3><p>首先从<a target="_blank" rel="noopener" href="https://pymatgen.org/installation.html#conda-based-install">这个页面</a>上安装anaconda，这里提供的是miniconda版本。</p>
+<p>其次，常规来说，安装了Anaconda发行版时已经自动为你安装了Jupyter Notebook的，但如果没有自动安装，那么就在终端（Linux或macOS的“终端”，Windows的“Anaconda Prompt”，以下均简称“终端”）中输入以下命令安装：<code>conda install jupyter notebook</code></p>
+<h3 id="安装numpy-pil库"><a href="#安装numpy-pil库" class="headerlink" title="安装numpy, pil库"></a>安装numpy, <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45326961">pil库</a></h3><p>在网页版jupyter notebook点击new，选择Terminal，输入<code>pip install numpy</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> Pillow 
+<span class="token comment"># python更新库函数语法</span>
+python3 <span class="token parameter variable">-m</span> pip <span class="token function">install</span> <span class="token parameter variable">--upgrade</span> pip
+python3 <span class="token parameter variable">-m</span> pip <span class="token function">install</span> <span class="token parameter variable">--upgrade</span> Pillow<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>将 <code>&lt;分支名称&gt;</code> 替换为你要拉取的分支名称，例如 <code>master</code>。</p>
+<h2 id="VMware虚拟机配置踩坑"><a href="#VMware虚拟机配置踩坑" class="headerlink" title="VMware虚拟机配置踩坑"></a>VMware虚拟机配置踩坑</h2><p><code>2023-09-08</code>今天在折腾虚拟机的时候尝试使用桥接模式将VMware Ubuntu和宿主机作为两台设备相互通信，但是在校园网环境下执行的时候，按照教程设置好了IP地址、网关、子网掩码后，发现可以ping通主机但无法ping通百度。查看了多个博客后，记录一个比较符合我情况的<a target="_blank" rel="noopener" href="https://blog.csdn.net/zzf1510711060/article/details/80682480">经验帖</a>：</p>
 <blockquote>
-<p>如遇到git拉取失败，可参考<a target="_blank" rel="noopener" href="https://geek-docs.com/git/git-questions/30_git_fail_to_use_git_pull_couldnt_find_remote_ref_xxx.html">此博客</a>寻找解决办法</p>
+<p><strong>有关校园网的问题</strong></p>
+<p>我在学校宿主机的ip是10.4.18.20而网关是10.4.16.1子网掩码是255.255.252.0</p>
+<p>我把虚拟机的ip设置成10.4.18.n，会出现可以ping的通8.8.8.8，ping外网的时候网址的ip也可以解析出来，但就是不出现包的</p>
+<p>我的解决方式是把10.4.18.n改成了10.4.16.n才能ping通</p>
+<p>但是问题又出现了，这个n也有要求比如10.4.16.22就可以ping外网，而10.4.16.20就不行和10.4.18.n情况一样。。。</p>
+<p>我猜是虚拟机发出的包少了什么配置数据，所以被校园网的防火墙给劫了，导致返回不了数据，因为我用虚拟机ping宿主机，当宿主机的防火墙没有关的时候也是这样，一直没有数据返回。</p>
+<p>于是我就让宿主机脸上wifi结果一切畅通，丝滑流畅。。。校园网真的是坑。。。</p>
 </blockquote>
-<p>推送代码：</p>
-<p><code>git push</code>命令用于从将本地的分支版本上传到远程并合并。</p>
-<p>命令格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果本地分支名与远程分支名相同，则可以省略冒号，远程主机名即为自定义的<code>remoteRepoAvatar</code></p>
-<p>这里总结了一份<a href="gitcheatsheet.pdf">gitcheatsheet</a>，方便用到的时候查询。</p>
-<h3 id="Git仓库合并error-refusing-to-merge-unrelated-histories"><a href="#Git仓库合并error-refusing-to-merge-unrelated-histories" class="headerlink" title="Git仓库合并error: refusing to merge unrelated histories"></a>Git仓库合并error: refusing to merge unrelated histories</h3><blockquote>
-<p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012145252/article/details/80628451">该博客solved</a></p>
-<p>注：本地新建文件夹开始git remote add操作前，需先git init，否则报错fatal: not a git repository (or any of the parent directories): .git</p>
-</blockquote>
-<p>环境：系统：Win10，git版本：2.42.0.windows.2</p>
-<p>问题：本地有一个初始化的git仓库，GitHub端手动创建了private库（含README文件），想要把本地合并到云端出现错误。</p>
-<p>解决方案：git使用不当。一般需先创建云端库再clone下来后更新代码。若遇到代码先于仓库的情况，从远程库拉取代码并将当前分支同其合并，使用<code>git pull &lt;remoteRepoAvatar&gt; master --allow-unrelated-histories</code></p>
-<p>之后完成本地更新commit等操作后push到远端即可。</p>
-<h2 id="影视飓风使用的字幕版式"><a href="#影视飓风使用的字幕版式" class="headerlink" title="@影视飓风使用的字幕版式"></a>@影视飓风使用的字幕版式</h2><p><code>字符</code>字体:思源黑体，字形:粗体，颜色:白色，大小:50，字距:0</p>
-<p><code>变换</code>位置:X:1920，Y:150</p>
-<p><code>投影</code>色彩:黑色，偏移:X:4，Y:-4，模糊:4，不透明度:75</p>
-<p><code>备注</code>适用于 4096*2048分辨率，参考数值，非硬性规定，可自行调整</p>
-<h2 id="关于教育年级“级”与“届”的疑惑"><a href="#关于教育年级“级”与“届”的疑惑" class="headerlink" title="关于教育年级“级”与“届”的疑惑"></a>关于教育年级“级”与“届”的疑惑</h2><p>重庆市教委对南岸区一名家长就此提出的疑问进行的<a target="_blank" rel="noopener" href="https://jw.cq.gov.cn/igixmj/xjgk/201911/tGovMsgBox_725306.html">官方回复</a>中表示，“级”与“届”有准确的称呼，<strong>学生入学时的年级称为“级”，毕业时的年级称为“届”。</strong></p>
-<h2 id="字体设计相关"><a href="#字体设计相关" class="headerlink" title="字体设计相关"></a>字体设计相关</h2><p>西方国家字母体系分为两类：serif 以及 sans-serif。<br>serif 是衬线字体，意思是在字的笔画开始、结束的地方有额外的装饰，而且笔画的粗细会有所不同。相反的，sans-serif 就没有这些额外的装饰，而且笔画的粗细差不多。<br>serif 字体容易识别，它强调了每个字母笔画的开始和结束，因此易读性比较高，sans serif 则比较醒目。在中文阅读的情况下，适合使用 serif 字体（如宋体）进行排版，易于换行阅读的识别性，避免发生行间的阅读错误。</p>
-<h3 id="Sans-Serif"><a href="#Sans-Serif" class="headerlink" title="Sans Serif"></a>Sans Serif</h3><p>无衬线体，对中文而言指的就是黑体。并不是具体一款字体，而是一类字体，选择它其实等于选择这类字体中优先级最高的那款字体（交给 fontconfig 自动决定）。Sans 表示法语的“无”。有时简写成“Sans”。常见的无衬线体有 Arial、Helvetica、DejaVu Sans、微软雅黑和思源黑体。Ubuntu 也是一个无衬线体。无衬线体因为笔画简单没有复杂装饰，较为适合像素密度较低的普通电脑屏幕阅读，也受崇尚简单的现代人青睐。</p>
-<h3 id="Serif"><a href="#Serif" class="headerlink" title="Serif"></a>Serif</h3><p>衬线体，有时叫做白体。对于中文来说例子有宋体&#x2F;明体（这些词和“黑体”一样，都是指一类字体）；对于英文来说具体到字体名的例子有 Times 和 Garamond。一般认为衬线可以引导人阅读的视线，提高阅读速度和准度。</p>
-<h3 id="Cursive-Script"><a href="#Cursive-Script" class="headerlink" title="Cursive (Script)"></a>Cursive (Script)</h3><p>（草书）手写体。严格的对应有 Itc Zapf Chancery、Zapfino 和行书&#x2F;行楷。一些系统会使用有手写风格而不过分潦草的字体如 Comic Sans 代替，此时就应该使用楷书搭配。</p>
-<h3 id="Monospace"><a href="#Monospace" class="headerlink" title="Monospace"></a>Monospace</h3><p>等宽字体，指字符宽度相同的一类字体。注意中英文宽度应该不是相同而是成整数倍关系——一般来说中文字符在这些字体中的宽度是西文的两倍（wcwidth）。</p>
-<h3 id="Proportional"><a href="#Proportional" class="headerlink" title="Proportional"></a>Proportional</h3><p>比例字体，指字符宽度存在变化的字体。</p>
-<h3 id="Bitmap-Raster"><a href="#Bitmap-Raster" class="headerlink" title="Bitmap (Raster)"></a>Bitmap (Raster)</h3><p>点阵字体，或者叫位图字体。以像素点形式存储在电脑中。</p>
-<h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>矢量字体，以曲线形式存储在电脑中。</p>
+<p>同样的，我改为个人热点连接后也成功ping了外网。证明校园网是会封锁某些ip数据的。至于更换ip没来得及尝试。顺带一提traceroute可以检测网络问题，奈何快断电了我也没来得及尝试。</p>
+<p>同时有时候虚拟机和宿主机ping不通，检查自己的网络是公有网还是专用网络，此时把对应的防火墙关闭即可。</p>
+<h2 id="Zview导入数据出现弹窗"><a href="#Zview导入数据出现弹窗" class="headerlink" title="Zview导入数据出现弹窗"></a>Zview导入数据出现弹窗</h2><p>Q：我安装了另外的ZView，显示this program is operating in a demonstration mode. For full authorization，please contact scribner associates or your distributor，这是怎么回事啊</p>
+<p>A：直接导入TXT出现了这个情况，，删掉TXT里面非数字部分后目前就解决了</p>
+<p>SA：未解决：删掉最后那两列degree和别的值好像就不缺了，只保留frequency Z’ 和Z’’，然后又用数字形式保存到了txt里</p>
 
                 
             </div>
@@ -429,7 +418,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/2024/07/09/zhi-shi-za-tan/">http://frecoder007.github.io/2024/07/09/zhi-shi-za-tan/</a>
+                    <a href="http://frecoder007.github.io/posts/be38/">http://frecoder007.github.io/posts/be38/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -467,8 +456,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%8A%9D%E5%A3%AB/">
-                                    <span class="chip bg-color">芝士</span>
+                                <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
+                                    <span class="chip bg-color">技术杂谈</span>
                                 </a>
                             
                         </div>
@@ -543,7 +532,7 @@
         repo: 'frecoder007.github.io',
         owner: 'frecoder007',
         admin: "frecoder007",
-        id: '2024-07-09T23-08-22',
+        id: '2023-09-08T22-59-42',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -575,13 +564,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/07/13/about-me/">
+                <a href="/posts/927e/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="About Me">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="软件经验随笔">
                         
-                        <span class="card-title">About Me</span>
+                        <span class="card-title">软件经验随笔</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -592,7 +581,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-07
                         </span>
                         <span class="publish-author">
                             
@@ -605,8 +594,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%85%B3%E4%BA%8E/">
-                        <span class="chip bg-color">关于</span>
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
+                        <span class="chip bg-color">技术杂谈</span>
                     </a>
                     
                 </div>
@@ -617,15 +606,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2024/07/07/hai-xiang-wo-liao-ma/">
+                <a href="/posts/be38/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/frecoder007/pictures/main/others/ailixiya.png" class="responsive-img" alt="嗨~想我了吗">
                         
-                        <span class="card-title">嗨~想我了吗</span>
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="软件安装排障教程集锦">
+                        
+                        <span class="card-title">软件安装排障教程集锦</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -636,7 +626,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
                             </span>
                         <span class="publish-author">
                             
@@ -646,11 +636,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ACG/">
-                        <span class="chip bg-color">ACG</span>
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">
+                        <span class="chip bg-color">技术杂谈</span>
                     </a>
                     
                 </div>
@@ -889,7 +880,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9.1k</span>
+                        class="white-color">9.4k</span>
             
             
             
