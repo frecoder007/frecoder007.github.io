@@ -158,10 +158,6 @@
   <li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
 
 <div id="mobile-nav" class="side-nav sidenav">
 
@@ -326,7 +322,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-18
+                    2024-07-29
                 </div>
                 
 
@@ -340,7 +336,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -360,6 +356,11 @@
         <script src="/libs/prism/prism.js"></script>
         
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
@@ -433,7 +434,7 @@
 <span class="token comment"># crc32 &amp; dec</span>
 <span class="token comment"># https://post.zz173.com/posts/1690090958.html</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>并修改该文件内的premalink值：<code>permalink: posts/:abbrlink/</code></p>
+<p>并修改该文件内的premalink值：<code>permalink: posts/:abbrlink/</code>或者<code>permalink: posts/:abbrlink.html</code>，根据自己喜好选择一种链接样式即可。</p>
 <p>实际工作流程为引入abbrlink插件后，<code>hexo g</code>的时候会根据当前md的标题和时间生成唯一哈希映射值，添加到对应md文件中的Front-matter中作为唯一标识符。局限性是crc16算法仅支持65536个哈希值，不过插件在生成文章标识符的时候遇到相同值会尝试更换到不同值。</p>
 <h2 id="站内字体美化"><a href="#站内字体美化" class="headerlink" title="站内字体美化"></a>站内字体美化</h2><p>本站采用的衬线字体为<code>思源宋体</code>，经查询该字体为<code>开源免费</code>，详情请见<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif/blob/master/README-CN.md">此链接</a>。如您喜欢该字体，可参考<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1622400">此教程</a>美化您的网站。</p>
 <h2 id="站内滚动条美化"><a href="#站内滚动条美化" class="headerlink" title="站内滚动条美化"></a>站内滚动条美化</h2><blockquote>
@@ -488,8 +489,6 @@ document<span class="token punctuation">.</span><span class="token function">add
 <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
 
 <h2 id="标题大小自适应设备"><a href="#标题大小自适应设备" class="headerlink" title="标题大小自适应设备"></a>标题大小自适应设备</h2><p>参考<a target="_blank" rel="noopener" href="https://chen-shang.github.io/2019/08/15/gong-ju-kong/hexo/hexo-theme-matery-zhu-ti-you-hua/">涓涓细流博客</a>更改<code>matery/source/css/matery.css</code>文件</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css">---------------------------- source/css/matery.css ----------------------------
@@ -566,9 +565,9 @@ document<span class="token punctuation">.</span><span class="token function">add
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="部署游戏项目"><a href="#部署游戏项目" class="headerlink" title="部署游戏项目"></a>部署游戏项目</h2><p>见<a target="_blank" rel="noopener" href="https://zwxo.github.io/articles/36588/">此博客</a>，留作备份用，暂不添加此功能。</p>
-<h2 id="音乐播放器精修"><a href="#音乐播放器精修" class="headerlink" title="音乐播放器精修"></a>音乐播放器精修</h2><p>起因是发现博客在黑夜模式下播放器位置发生偏移，导致底部高出了一大截，非常难看，猜测黑夜模式开发者和原版不同，导致代码风格有差异。因此使用F12工具翻找对应元素，到右侧检索到的<code>dark.css</code>文件中修改样式即可，修改后黑框位置发生移动。<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/image-20240717123544906.png" alt="image-20240717123544906"></p>
-<p>发现鼠标移到展开箭头后，黑框大小无法容纳箭头，因此再修改黑框的大小属性。查询属性发现展开箭头宽18px，封面图66px，因此修改为84px<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/image-20240717124529348.png" alt="image-20240717124529348"></p>
-<p>之后就是黑夜模式下，播放器的格式出现了问题，因此将图中参数改为0即可。<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/3.png" alt="3"></p>
+<h2 id="音乐播放器精修"><a href="#音乐播放器精修" class="headerlink" title="音乐播放器精修"></a>音乐播放器精修</h2><p>起因是发现博客在黑夜模式下播放器位置发生偏移，导致底部高出了一大截，非常难看，猜测黑夜模式开发者和原版不同，导致代码风格有差异。因此使用F12工具翻找对应元素，到右侧检索到的<code>dark.css</code>文件中修改样式即可，修改后黑框位置发生移动。<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/image-20240717123544906.png" alt="F12工具显示的样式代码"></p>
+<p>发现鼠标移到展开箭头后，黑框大小无法容纳箭头，因此再修改黑框的大小属性。查询属性发现展开箭头宽18px，封面图66px，因此修改为84px<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/image-20240717124529348.png" alt="修改样式参数"></p>
+<p>之后就是黑夜模式下，播放器的格式出现了问题，因此将图中参数改为0即可。<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/3.png" alt="修改样式参数2"></p>
 <p>最后，白天模式下，部分字体采用的仍然是白色，很难辨识，因此对字体和list背景进行了修改，如下图：<br><img src="https://cdn.jsdelivr.net/gh/frecoder007/pictures@main/mdAssets/%E7%99%BD%E5%A4%A9%E6%A8%A1%E5%BC%8F%E4%BF%AE%E6%94%B9.png" alt="白天模式修改"></p>
 <p>这样我们就完成了播放器的美化了！虽然不一定有人会用这个功能，但是美化终归是能治好强迫症的。</p>
 
@@ -597,7 +596,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://frecoder007.github.io/posts/146e/">http://frecoder007.github.io/posts/146e/</a>
+                    <a href="http://frecoder007.github.io/posts/146e.html">http://frecoder007.github.io/posts/146e.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,7 +743,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/posts/146e/">
+                <a href="/posts/146e.html">
                     <div class="card-image">
                         
                         
@@ -790,7 +789,7 @@ document<span class="token punctuation">.</span><span class="token function">add
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/efed/">
+                <a href="/posts/efed.html">
                     <div class="card-image">
                         
                         
@@ -1060,7 +1059,7 @@ document<span class="token punctuation">.</span><span class="token function">add
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9.4k</span>
+                        class="white-color">9.9k</span>
             
             
             
